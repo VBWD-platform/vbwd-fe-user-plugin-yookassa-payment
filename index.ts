@@ -19,19 +19,19 @@ export const yookassaPaymentPlugin: IPlugin = {
       path: '/pay/yookassa',
       name: 'yookassa-payment',
       component: () => import('./YooKassaPaymentView.vue'),
-      meta: { requiresAuth: true }
+      meta: { requiresAuth: true, noLayout: true }
     });
     sdk.addRoute({
       path: '/pay/yookassa/success',
       name: 'yookassa-success',
       component: () => import('./YooKassaSuccessView.vue'),
-      meta: { requiresAuth: true }
+      meta: { requiresAuth: true, noLayout: true }
     });
     sdk.addRoute({
       path: '/pay/yookassa/cancel',
       name: 'yookassa-cancel',
       component: () => import('./YooKassaCancelView.vue'),
-      meta: { requiresAuth: true }
+      meta: { requiresAuth: true, noLayout: true }
     });
 
     sdk.addTranslations('en', en);

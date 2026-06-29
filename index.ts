@@ -11,7 +11,7 @@ import zh from './locales/zh.json';
 
 export const yookassaPaymentPlugin: IPlugin = {
   name: 'yookassa-payment',
-  version: '26.6',
+  version: '26.6.1',
   description: 'YooKassa payment processing — redirects to YooKassa Checkout',
   _active: false,
 
